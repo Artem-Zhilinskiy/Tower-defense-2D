@@ -131,7 +131,7 @@ GameObject:
   m_Component:
   - component: {fileID: 15205205}
   - component: {fileID: 15205206}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -212,7 +212,7 @@ GameObject:
   m_Component:
   - component: {fileID: 15912940}
   - component: {fileID: 15912941}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -293,7 +293,7 @@ GameObject:
   m_Component:
   - component: {fileID: 24105575}
   - component: {fileID: 24105576}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -374,7 +374,7 @@ GameObject:
   m_Component:
   - component: {fileID: 27110272}
   - component: {fileID: 27110273}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -455,7 +455,7 @@ GameObject:
   m_Component:
   - component: {fileID: 34539204}
   - component: {fileID: 34539205}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -536,7 +536,7 @@ GameObject:
   m_Component:
   - component: {fileID: 39665442}
   - component: {fileID: 39665443}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Point19
   m_TagString: MovingPoints
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -593,7 +593,7 @@ GameObject:
   m_Component:
   - component: {fileID: 64295013}
   - component: {fileID: 64295014}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -674,7 +674,7 @@ GameObject:
   m_Component:
   - component: {fileID: 64360871}
   - component: {fileID: 64360872}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -755,7 +755,7 @@ GameObject:
   m_Component:
   - component: {fileID: 66553116}
   - component: {fileID: 66553117}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -836,7 +836,7 @@ GameObject:
   m_Component:
   - component: {fileID: 73077473}
   - component: {fileID: 73077474}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -917,7 +917,7 @@ GameObject:
   m_Component:
   - component: {fileID: 73613270}
   - component: {fileID: 73613271}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: ShopSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -998,7 +998,7 @@ GameObject:
   m_Component:
   - component: {fileID: 79952877}
   - component: {fileID: 79952878}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1079,7 +1079,7 @@ GameObject:
   m_Component:
   - component: {fileID: 83651685}
   - component: {fileID: 83651686}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1160,7 +1160,7 @@ GameObject:
   m_Component:
   - component: {fileID: 83844081}
   - component: {fileID: 83844082}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1241,7 +1241,7 @@ GameObject:
   m_Component:
   - component: {fileID: 137532462}
   - component: {fileID: 137532463}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1322,7 +1322,7 @@ GameObject:
   m_Component:
   - component: {fileID: 140656276}
   - component: {fileID: 140656277}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1403,7 +1403,7 @@ GameObject:
   m_Component:
   - component: {fileID: 140836646}
   - component: {fileID: 140836647}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1484,7 +1484,7 @@ GameObject:
   m_Component:
   - component: {fileID: 149858423}
   - component: {fileID: 149858424}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1565,7 +1565,7 @@ GameObject:
   m_Component:
   - component: {fileID: 152492263}
   - component: {fileID: 152492264}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: ShopSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1646,7 +1646,7 @@ GameObject:
   m_Component:
   - component: {fileID: 156185496}
   - component: {fileID: 156185497}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1727,7 +1727,7 @@ GameObject:
   m_Component:
   - component: {fileID: 165475209}
   - component: {fileID: 165475210}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1808,7 +1808,7 @@ GameObject:
   m_Component:
   - component: {fileID: 180437049}
   - component: {fileID: 180437050}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1889,10 +1889,10 @@ GameObject:
   m_Component:
   - component: {fileID: 189998371}
   - component: {fileID: 189998372}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Finish
   m_TagString: MovingPoints
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1946,7 +1946,7 @@ GameObject:
   m_Component:
   - component: {fileID: 201018975}
   - component: {fileID: 201018976}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Point12
   m_TagString: MovingPoints
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -2003,7 +2003,7 @@ GameObject:
   m_Component:
   - component: {fileID: 214408940}
   - component: {fileID: 214408941}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2084,7 +2084,7 @@ GameObject:
   m_Component:
   - component: {fileID: 217651550}
   - component: {fileID: 217651551}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2164,7 +2164,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 218358932}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: MovingPoints
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2216,7 +2216,7 @@ GameObject:
   m_Component:
   - component: {fileID: 227880108}
   - component: {fileID: 227880109}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2297,7 +2297,7 @@ GameObject:
   m_Component:
   - component: {fileID: 259189075}
   - component: {fileID: 259189076}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2378,7 +2378,7 @@ GameObject:
   m_Component:
   - component: {fileID: 271401863}
   - component: {fileID: 271401864}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2459,7 +2459,7 @@ GameObject:
   m_Component:
   - component: {fileID: 287801317}
   - component: {fileID: 287801318}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Point3
   m_TagString: MovingPoints
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -2516,7 +2516,7 @@ GameObject:
   m_Component:
   - component: {fileID: 318116689}
   - component: {fileID: 318116690}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2596,7 +2596,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 332104872}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Enemy1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -2628,7 +2628,7 @@ GameObject:
   m_Component:
   - component: {fileID: 343835356}
   - component: {fileID: 343835357}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2709,7 +2709,7 @@ GameObject:
   m_Component:
   - component: {fileID: 358155702}
   - component: {fileID: 358155703}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2790,7 +2790,7 @@ GameObject:
   m_Component:
   - component: {fileID: 373830333}
   - component: {fileID: 373830334}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2871,7 +2871,7 @@ GameObject:
   m_Component:
   - component: {fileID: 377008092}
   - component: {fileID: 377008093}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2952,7 +2952,7 @@ GameObject:
   m_Component:
   - component: {fileID: 378979241}
   - component: {fileID: 378979242}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3033,7 +3033,7 @@ GameObject:
   m_Component:
   - component: {fileID: 383653234}
   - component: {fileID: 383653235}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3114,7 +3114,7 @@ GameObject:
   m_Component:
   - component: {fileID: 385388412}
   - component: {fileID: 385388413}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3195,7 +3195,7 @@ GameObject:
   m_Component:
   - component: {fileID: 397553904}
   - component: {fileID: 397553905}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3276,7 +3276,7 @@ GameObject:
   m_Component:
   - component: {fileID: 403704512}
   - component: {fileID: 403704513}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3357,7 +3357,7 @@ GameObject:
   m_Component:
   - component: {fileID: 407703599}
   - component: {fileID: 407703600}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3438,7 +3438,7 @@ GameObject:
   m_Component:
   - component: {fileID: 409737398}
   - component: {fileID: 409737399}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3519,7 +3519,7 @@ GameObject:
   m_Component:
   - component: {fileID: 410765893}
   - component: {fileID: 410765894}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3600,7 +3600,7 @@ GameObject:
   m_Component:
   - component: {fileID: 415235128}
   - component: {fileID: 415235129}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Point17
   m_TagString: MovingPoints
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -3657,7 +3657,7 @@ GameObject:
   m_Component:
   - component: {fileID: 420405092}
   - component: {fileID: 420405093}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3738,7 +3738,7 @@ GameObject:
   m_Component:
   - component: {fileID: 438141925}
   - component: {fileID: 438141926}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3819,7 +3819,7 @@ GameObject:
   m_Component:
   - component: {fileID: 458171819}
   - component: {fileID: 458171820}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3900,7 +3900,7 @@ GameObject:
   m_Component:
   - component: {fileID: 466934369}
   - component: {fileID: 466934370}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3981,7 +3981,7 @@ GameObject:
   m_Component:
   - component: {fileID: 480449221}
   - component: {fileID: 480449222}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4062,7 +4062,7 @@ GameObject:
   m_Component:
   - component: {fileID: 484056643}
   - component: {fileID: 484056644}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4143,7 +4143,7 @@ GameObject:
   m_Component:
   - component: {fileID: 505369676}
   - component: {fileID: 505369677}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: ShopSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4307,7 +4307,7 @@ GameObject:
   m_Component:
   - component: {fileID: 521689582}
   - component: {fileID: 521689583}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4388,7 +4388,7 @@ GameObject:
   m_Component:
   - component: {fileID: 536280998}
   - component: {fileID: 536280999}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4469,7 +4469,7 @@ GameObject:
   m_Component:
   - component: {fileID: 546727639}
   - component: {fileID: 546727640}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4550,7 +4550,7 @@ GameObject:
   m_Component:
   - component: {fileID: 562796263}
   - component: {fileID: 562796264}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4631,7 +4631,7 @@ GameObject:
   m_Component:
   - component: {fileID: 564762839}
   - component: {fileID: 564762840}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4711,7 +4711,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 566434925}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Path
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4847,7 +4847,7 @@ GameObject:
   m_Component:
   - component: {fileID: 569154490}
   - component: {fileID: 569154491}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4928,7 +4928,7 @@ GameObject:
   m_Component:
   - component: {fileID: 572930396}
   - component: {fileID: 572930397}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5009,7 +5009,7 @@ GameObject:
   m_Component:
   - component: {fileID: 574155387}
   - component: {fileID: 574155388}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Point18
   m_TagString: MovingPoints
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -5066,7 +5066,7 @@ GameObject:
   m_Component:
   - component: {fileID: 574334400}
   - component: {fileID: 574334401}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5147,7 +5147,7 @@ GameObject:
   m_Component:
   - component: {fileID: 574497761}
   - component: {fileID: 574497762}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5228,7 +5228,7 @@ GameObject:
   m_Component:
   - component: {fileID: 588291293}
   - component: {fileID: 588291294}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5309,7 +5309,7 @@ GameObject:
   m_Component:
   - component: {fileID: 592065719}
   - component: {fileID: 592065720}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5390,7 +5390,7 @@ GameObject:
   m_Component:
   - component: {fileID: 592732698}
   - component: {fileID: 592732699}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5471,7 +5471,7 @@ GameObject:
   m_Component:
   - component: {fileID: 601267309}
   - component: {fileID: 601267310}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5552,7 +5552,7 @@ GameObject:
   m_Component:
   - component: {fileID: 601570344}
   - component: {fileID: 601570345}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5633,7 +5633,7 @@ GameObject:
   m_Component:
   - component: {fileID: 604581255}
   - component: {fileID: 604581256}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5714,7 +5714,7 @@ GameObject:
   m_Component:
   - component: {fileID: 611899395}
   - component: {fileID: 611899396}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5795,7 +5795,7 @@ GameObject:
   m_Component:
   - component: {fileID: 612444563}
   - component: {fileID: 612444564}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: ShopSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5876,7 +5876,7 @@ GameObject:
   m_Component:
   - component: {fileID: 619015102}
   - component: {fileID: 619015103}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5957,7 +5957,7 @@ GameObject:
   m_Component:
   - component: {fileID: 625742726}
   - component: {fileID: 625742727}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6038,7 +6038,7 @@ GameObject:
   m_Component:
   - component: {fileID: 629427657}
   - component: {fileID: 629427658}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6119,7 +6119,7 @@ GameObject:
   m_Component:
   - component: {fileID: 635144086}
   - component: {fileID: 635144087}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Point10
   m_TagString: MovingPoints
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -6176,7 +6176,7 @@ GameObject:
   m_Component:
   - component: {fileID: 644806693}
   - component: {fileID: 644806694}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6257,7 +6257,7 @@ GameObject:
   m_Component:
   - component: {fileID: 652514836}
   - component: {fileID: 652514837}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6338,7 +6338,7 @@ GameObject:
   m_Component:
   - component: {fileID: 654604879}
   - component: {fileID: 654604880}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6419,7 +6419,7 @@ GameObject:
   m_Component:
   - component: {fileID: 657165124}
   - component: {fileID: 657165125}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6500,7 +6500,7 @@ GameObject:
   m_Component:
   - component: {fileID: 660800047}
   - component: {fileID: 660800048}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6581,7 +6581,7 @@ GameObject:
   m_Component:
   - component: {fileID: 663983377}
   - component: {fileID: 663983378}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6662,7 +6662,7 @@ GameObject:
   m_Component:
   - component: {fileID: 681147708}
   - component: {fileID: 681147709}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6743,7 +6743,7 @@ GameObject:
   m_Component:
   - component: {fileID: 684749343}
   - component: {fileID: 684749344}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6824,7 +6824,7 @@ GameObject:
   m_Component:
   - component: {fileID: 686739247}
   - component: {fileID: 686739248}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6905,7 +6905,7 @@ GameObject:
   m_Component:
   - component: {fileID: 691227365}
   - component: {fileID: 691227366}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6986,7 +6986,7 @@ GameObject:
   m_Component:
   - component: {fileID: 697879045}
   - component: {fileID: 697879046}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7067,7 +7067,7 @@ GameObject:
   m_Component:
   - component: {fileID: 698756370}
   - component: {fileID: 698756371}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7148,7 +7148,7 @@ GameObject:
   m_Component:
   - component: {fileID: 720090282}
   - component: {fileID: 720090283}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: ShopSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7229,7 +7229,7 @@ GameObject:
   m_Component:
   - component: {fileID: 727069817}
   - component: {fileID: 727069818}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7310,7 +7310,7 @@ GameObject:
   m_Component:
   - component: {fileID: 728388396}
   - component: {fileID: 728388397}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7391,7 +7391,7 @@ GameObject:
   m_Component:
   - component: {fileID: 758789336}
   - component: {fileID: 758789337}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: ShopSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7472,7 +7472,7 @@ GameObject:
   m_Component:
   - component: {fileID: 759497127}
   - component: {fileID: 759497128}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7553,7 +7553,7 @@ GameObject:
   m_Component:
   - component: {fileID: 781166593}
   - component: {fileID: 781166594}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7634,7 +7634,7 @@ GameObject:
   m_Component:
   - component: {fileID: 784432686}
   - component: {fileID: 784432687}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7715,7 +7715,7 @@ GameObject:
   m_Component:
   - component: {fileID: 796206925}
   - component: {fileID: 796206926}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7796,7 +7796,7 @@ GameObject:
   m_Component:
   - component: {fileID: 803304420}
   - component: {fileID: 803304421}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: ShopSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7877,7 +7877,7 @@ GameObject:
   m_Component:
   - component: {fileID: 818676678}
   - component: {fileID: 818676679}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7958,7 +7958,7 @@ GameObject:
   m_Component:
   - component: {fileID: 818956621}
   - component: {fileID: 818956622}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8039,7 +8039,7 @@ GameObject:
   m_Component:
   - component: {fileID: 822357043}
   - component: {fileID: 822357044}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8120,7 +8120,7 @@ GameObject:
   m_Component:
   - component: {fileID: 822891245}
   - component: {fileID: 822891246}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: ShopSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8201,7 +8201,7 @@ GameObject:
   m_Component:
   - component: {fileID: 832511954}
   - component: {fileID: 832511955}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8282,7 +8282,7 @@ GameObject:
   m_Component:
   - component: {fileID: 836791487}
   - component: {fileID: 836791488}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8363,7 +8363,7 @@ GameObject:
   m_Component:
   - component: {fileID: 840537568}
   - component: {fileID: 840537569}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8444,7 +8444,7 @@ GameObject:
   m_Component:
   - component: {fileID: 843961161}
   - component: {fileID: 843961162}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: ShopSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8525,7 +8525,7 @@ GameObject:
   m_Component:
   - component: {fileID: 851245529}
   - component: {fileID: 851245530}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8606,7 +8606,7 @@ GameObject:
   m_Component:
   - component: {fileID: 857683253}
   - component: {fileID: 857683254}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8687,7 +8687,7 @@ GameObject:
   m_Component:
   - component: {fileID: 865803012}
   - component: {fileID: 865803013}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8768,7 +8768,7 @@ GameObject:
   m_Component:
   - component: {fileID: 871579677}
   - component: {fileID: 871579678}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8849,7 +8849,7 @@ GameObject:
   m_Component:
   - component: {fileID: 879178178}
   - component: {fileID: 879178179}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8930,7 +8930,7 @@ GameObject:
   m_Component:
   - component: {fileID: 894339768}
   - component: {fileID: 894339769}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9011,7 +9011,7 @@ GameObject:
   m_Component:
   - component: {fileID: 901805485}
   - component: {fileID: 901805486}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Start
   m_TagString: MovingPoints
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -9068,7 +9068,7 @@ GameObject:
   m_Component:
   - component: {fileID: 918101111}
   - component: {fileID: 918101112}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9149,7 +9149,7 @@ GameObject:
   m_Component:
   - component: {fileID: 923082633}
   - component: {fileID: 923082634}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9230,7 +9230,7 @@ GameObject:
   m_Component:
   - component: {fileID: 931337254}
   - component: {fileID: 931337255}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9311,7 +9311,7 @@ GameObject:
   m_Component:
   - component: {fileID: 934236702}
   - component: {fileID: 934236703}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9392,7 +9392,7 @@ GameObject:
   m_Component:
   - component: {fileID: 934704835}
   - component: {fileID: 934704836}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: ShopSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9473,7 +9473,7 @@ GameObject:
   m_Component:
   - component: {fileID: 942232324}
   - component: {fileID: 942232325}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9554,7 +9554,7 @@ GameObject:
   m_Component:
   - component: {fileID: 954830910}
   - component: {fileID: 954830911}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9635,7 +9635,7 @@ GameObject:
   m_Component:
   - component: {fileID: 963368508}
   - component: {fileID: 963368509}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9716,7 +9716,7 @@ GameObject:
   m_Component:
   - component: {fileID: 965519433}
   - component: {fileID: 965519434}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9797,7 +9797,7 @@ GameObject:
   m_Component:
   - component: {fileID: 971683337}
   - component: {fileID: 971683338}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9878,7 +9878,7 @@ GameObject:
   m_Component:
   - component: {fileID: 990170051}
   - component: {fileID: 990170052}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9959,7 +9959,7 @@ GameObject:
   m_Component:
   - component: {fileID: 990622887}
   - component: {fileID: 990622888}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10042,7 +10042,7 @@ GameObject:
   - component: {fileID: 1001352628}
   - component: {fileID: 1001352629}
   - component: {fileID: 1001352630}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Enemy1Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10057,7 +10057,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1001352626}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10, y: 5.29, z: 0}
+  m_LocalPosition: {x: -10, y: 5.04, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 332104872}
@@ -10170,7 +10170,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1021417392}
   - component: {fileID: 1021417393}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10251,7 +10251,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1022800836}
   - component: {fileID: 1022800837}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10332,7 +10332,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1025716856}
   - component: {fileID: 1025716857}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10413,7 +10413,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1028051409}
   - component: {fileID: 1028051410}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: ShopSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10494,7 +10494,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1042425386}
   - component: {fileID: 1042425387}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10575,7 +10575,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1052647757}
   - component: {fileID: 1052647758}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10656,7 +10656,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1056578075}
   - component: {fileID: 1056578076}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10737,7 +10737,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1084480721}
   - component: {fileID: 1084480722}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10818,7 +10818,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1099148734}
   - component: {fileID: 1099148735}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: ShopSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10899,7 +10899,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1099629106}
   - component: {fileID: 1099629107}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10980,7 +10980,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1115577977}
   - component: {fileID: 1115577978}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11061,7 +11061,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1117923969}
   - component: {fileID: 1117923970}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11142,7 +11142,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1123036626}
   - component: {fileID: 1123036627}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Point8
   m_TagString: MovingPoints
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -11199,7 +11199,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1136575021}
   - component: {fileID: 1136575022}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11280,7 +11280,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1145020752}
   - component: {fileID: 1145020753}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11361,7 +11361,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1148329261}
   - component: {fileID: 1148329262}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11442,7 +11442,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1152389093}
   - component: {fileID: 1152389094}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11523,7 +11523,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1172514535}
   - component: {fileID: 1172514536}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11604,7 +11604,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1178889184}
   - component: {fileID: 1178889185}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11685,7 +11685,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1179563326}
   - component: {fileID: 1179563327}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11766,7 +11766,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1179649035}
   - component: {fileID: 1179649036}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11847,7 +11847,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1190225604}
   - component: {fileID: 1190225605}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11928,7 +11928,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1192361071}
   - component: {fileID: 1192361072}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12009,7 +12009,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1204653592}
   - component: {fileID: 1204653593}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12090,7 +12090,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1205384117}
   - component: {fileID: 1205384118}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Point2
   m_TagString: MovingPoints
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -12147,7 +12147,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1216886324}
   - component: {fileID: 1216886325}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12228,7 +12228,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1220563723}
   - component: {fileID: 1220563724}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Point1
   m_TagString: MovingPoints
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -12285,7 +12285,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1230097977}
   - component: {fileID: 1230097978}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12366,7 +12366,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1245009790}
   - component: {fileID: 1245009791}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12447,7 +12447,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1256821495}
   - component: {fileID: 1256821496}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: ShopSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12528,7 +12528,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1283373422}
   - component: {fileID: 1283373423}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12609,7 +12609,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1291201693}
   - component: {fileID: 1291201694}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12690,7 +12690,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1300704051}
   - component: {fileID: 1300704052}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: ShopSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12771,7 +12771,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1309026682}
   - component: {fileID: 1309026683}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Point16
   m_TagString: MovingPoints
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -12828,7 +12828,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1317908514}
   - component: {fileID: 1317908515}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Point14
   m_TagString: MovingPoints
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -12885,7 +12885,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1322182966}
   - component: {fileID: 1322182967}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12966,7 +12966,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1323678247}
   - component: {fileID: 1323678248}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13047,7 +13047,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1338626528}
   - component: {fileID: 1338626529}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13128,7 +13128,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1345983080}
   - component: {fileID: 1345983081}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13209,7 +13209,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1347747544}
   - component: {fileID: 1347747545}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13290,7 +13290,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1348176556}
   - component: {fileID: 1348176557}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13371,7 +13371,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1350711420}
   - component: {fileID: 1350711421}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13452,7 +13452,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1360572732}
   - component: {fileID: 1360572733}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13533,7 +13533,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1363473975}
   - component: {fileID: 1363473976}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13614,7 +13614,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1364365185}
   - component: {fileID: 1364365186}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13695,7 +13695,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1364527134}
   - component: {fileID: 1364527135}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13776,7 +13776,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1375630187}
   - component: {fileID: 1375630188}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13857,7 +13857,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1391692332}
   - component: {fileID: 1391692333}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Point9
   m_TagString: MovingPoints
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -13914,7 +13914,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1392886378}
   - component: {fileID: 1392886379}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13995,7 +13995,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1409841082}
   - component: {fileID: 1409841083}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14076,7 +14076,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1431634896}
   - component: {fileID: 1431634897}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Point7
   m_TagString: MovingPoints
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -14132,7 +14132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1448584032}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Map
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14167,7 +14167,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1459250909}
   - component: {fileID: 1459250910}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14248,7 +14248,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1469175210}
   - component: {fileID: 1469175211}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14329,7 +14329,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1469530089}
   - component: {fileID: 1469530090}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: ShopSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14410,7 +14410,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1470982790}
   - component: {fileID: 1470982791}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14490,7 +14490,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1478542325}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: ShopSpace
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14545,7 +14545,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1481837793}
   - component: {fileID: 1481837794}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14626,7 +14626,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1487517647}
   - component: {fileID: 1487517648}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14707,7 +14707,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1493016154}
   - component: {fileID: 1493016155}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14788,7 +14788,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1505087070}
   - component: {fileID: 1505087071}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Point15
   m_TagString: MovingPoints
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -14845,7 +14845,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1518562155}
   - component: {fileID: 1518562156}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14926,7 +14926,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1521640824}
   - component: {fileID: 1521640825}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15007,7 +15007,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1522146682}
   - component: {fileID: 1522146683}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Point6
   m_TagString: MovingPoints
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -15064,7 +15064,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1522273296}
   - component: {fileID: 1522273297}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15145,7 +15145,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1527814478}
   - component: {fileID: 1527814479}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15226,7 +15226,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1531555913}
   - component: {fileID: 1531555914}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15307,7 +15307,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1537361109}
   - component: {fileID: 1537361110}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15388,7 +15388,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1538874747}
   - component: {fileID: 1538874748}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15469,7 +15469,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1545727315}
   - component: {fileID: 1545727316}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15550,7 +15550,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1554299186}
   - component: {fileID: 1554299187}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: ShopSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15631,7 +15631,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1558630813}
   - component: {fileID: 1558630814}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15712,7 +15712,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1559512292}
   - component: {fileID: 1559512293}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15793,7 +15793,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1565693765}
   - component: {fileID: 1565693766}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Point4
   m_TagString: MovingPoints
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -15850,7 +15850,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1569592247}
   - component: {fileID: 1569592248}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15931,7 +15931,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1574855058}
   - component: {fileID: 1574855059}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: ShopSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16012,7 +16012,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1575940105}
   - component: {fileID: 1575940106}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16093,7 +16093,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1587760206}
   - component: {fileID: 1587760207}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16174,7 +16174,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1608573758}
   - component: {fileID: 1608573759}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16255,7 +16255,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1623129328}
   - component: {fileID: 1623129329}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16336,7 +16336,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1635181208}
   - component: {fileID: 1635181209}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Point13
   m_TagString: MovingPoints
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -16393,7 +16393,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1640682345}
   - component: {fileID: 1640682346}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16474,7 +16474,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1652953430}
   - component: {fileID: 1652953431}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16555,7 +16555,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1658619145}
   - component: {fileID: 1658619146}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16636,7 +16636,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1663207645}
   - component: {fileID: 1663207646}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16717,7 +16717,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1672237754}
   - component: {fileID: 1672237755}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16798,7 +16798,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1673187290}
   - component: {fileID: 1673187291}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16879,7 +16879,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1680475503}
   - component: {fileID: 1680475504}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16960,7 +16960,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1687221297}
   - component: {fileID: 1687221298}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17041,7 +17041,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1697236397}
   - component: {fileID: 1697236398}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: ShopSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17122,7 +17122,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1717614458}
   - component: {fileID: 1717614459}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17203,7 +17203,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1725267280}
   - component: {fileID: 1725267281}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17284,7 +17284,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1726071063}
   - component: {fileID: 1726071064}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: ShopSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17365,7 +17365,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1737106440}
   - component: {fileID: 1737106441}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17446,7 +17446,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1747825912}
   - component: {fileID: 1747825913}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17527,7 +17527,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1748620310}
   - component: {fileID: 1748620311}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17608,7 +17608,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1756255798}
   - component: {fileID: 1756255799}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17689,7 +17689,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1757782267}
   - component: {fileID: 1757782268}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17770,7 +17770,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1767640854}
   - component: {fileID: 1767640855}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17851,7 +17851,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1773570497}
   - component: {fileID: 1773570498}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: ShopSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17932,7 +17932,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1778536439}
   - component: {fileID: 1778536440}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18013,7 +18013,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1783228118}
   - component: {fileID: 1783228119}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18094,7 +18094,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1797447290}
   - component: {fileID: 1797447291}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18175,7 +18175,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1798131345}
   - component: {fileID: 1798131346}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18256,7 +18256,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1809138978}
   - component: {fileID: 1809138979}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18337,7 +18337,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1817981948}
   - component: {fileID: 1817981949}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18418,7 +18418,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1819935608}
   - component: {fileID: 1819935609}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18498,7 +18498,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1826756837}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18655,7 +18655,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1858676786}
   - component: {fileID: 1858676787}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18736,7 +18736,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1875517955}
   - component: {fileID: 1875517956}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18817,7 +18817,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1880272070}
   - component: {fileID: 1880272071}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18898,7 +18898,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1880660680}
   - component: {fileID: 1880660681}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18979,7 +18979,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1893977925}
   - component: {fileID: 1893977926}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: ShopSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19060,7 +19060,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1897001538}
   - component: {fileID: 1897001539}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: ShopSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19141,7 +19141,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1900043503}
   - component: {fileID: 1900043504}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19222,7 +19222,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1902721903}
   - component: {fileID: 1902721904}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19303,7 +19303,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1903677253}
   - component: {fileID: 1903677254}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19384,7 +19384,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1908572254}
   - component: {fileID: 1908572255}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19465,7 +19465,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1934296793}
   - component: {fileID: 1934296794}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19546,7 +19546,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1935087059}
   - component: {fileID: 1935087060}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19627,7 +19627,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1940142661}
   - component: {fileID: 1940142662}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19708,7 +19708,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1946415129}
   - component: {fileID: 1946415130}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19789,7 +19789,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1956091802}
   - component: {fileID: 1956091803}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19870,7 +19870,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1956663316}
   - component: {fileID: 1956663317}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19951,7 +19951,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1961282409}
   - component: {fileID: 1961282410}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20032,7 +20032,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1962673382}
   - component: {fileID: 1962673383}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20113,7 +20113,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1964516901}
   - component: {fileID: 1964516902}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20194,7 +20194,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1968092028}
   - component: {fileID: 1968092029}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20275,7 +20275,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1968884113}
   - component: {fileID: 1968884114}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20356,7 +20356,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1976423110}
   - component: {fileID: 1976423111}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20437,7 +20437,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1977893297}
   - component: {fileID: 1977893298}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20518,7 +20518,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1990771091}
   - component: {fileID: 1990771092}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20599,7 +20599,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1992693228}
   - component: {fileID: 1992693229}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20680,7 +20680,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1995250827}
   - component: {fileID: 1995250828}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: ShopSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20761,7 +20761,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1995369350}
   - component: {fileID: 1995369351}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20842,7 +20842,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1997203272}
   - component: {fileID: 1997203273}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20923,7 +20923,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1997650231}
   - component: {fileID: 1997650232}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21004,7 +21004,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1998890941}
   - component: {fileID: 1998890942}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21085,7 +21085,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2001874854}
   - component: {fileID: 2001874855}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21166,7 +21166,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2011657322}
   - component: {fileID: 2011657323}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Point5
   m_TagString: MovingPoints
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -21223,7 +21223,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2015823372}
   - component: {fileID: 2015823373}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21304,7 +21304,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2017016280}
   - component: {fileID: 2017016281}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21385,7 +21385,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2025858994}
   - component: {fileID: 2025858995}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21466,7 +21466,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2034265675}
   - component: {fileID: 2034265676}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21547,7 +21547,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2038172160}
   - component: {fileID: 2038172161}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21628,7 +21628,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2045244838}
   - component: {fileID: 2045244839}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21709,7 +21709,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2052471412}
   - component: {fileID: 2052471413}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21790,7 +21790,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2055606075}
   - component: {fileID: 2055606076}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: ShopSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21871,7 +21871,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2057919434}
   - component: {fileID: 2057919435}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21952,7 +21952,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2059933626}
   - component: {fileID: 2059933627}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22033,7 +22033,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2072612281}
   - component: {fileID: 2072612282}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22114,7 +22114,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2073651757}
   - component: {fileID: 2073651758}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22195,7 +22195,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2074483932}
   - component: {fileID: 2074483933}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Point11
   m_TagString: MovingPoints
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -22252,7 +22252,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2081890093}
   - component: {fileID: 2081890094}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22333,7 +22333,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2083937179}
   - component: {fileID: 2083937180}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22414,7 +22414,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2113983950}
   - component: {fileID: 2113983951}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22495,7 +22495,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2129029726}
   - component: {fileID: 2129029727}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GroundSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22576,7 +22576,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2132478819}
   - component: {fileID: 2132478820}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PathSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}

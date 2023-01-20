@@ -15,10 +15,10 @@ TagManager:
   - UI
   - 
   - 
-  - Towers
-  - Enemies
-  - Map
-  - MovingPoints
+  - CollisionObjects
+  - 
+  - 
+  - 
   - 
   - 
   - 
