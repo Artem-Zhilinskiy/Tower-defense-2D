@@ -14,17 +14,42 @@ namespace TowerDefense
         public int _totalEnemies;
         public int _enemiesPerSpawn;
 
-        private int _enemiesOnScreen = 0; 
-        // Start is called before the first frame update
-        void Start()
-        {
+        private int _enemiesOnScreen = 0;
 
+        private void Awake()
+        {
+            if (_instance == null)
+            {
+                _instance = this;
+            }
+            else if (_instance != this)
+            {
+                Destroy(gameObject);
+            }
+
+            DontDestroyOnLoad(gameObject);
         }
 
-        // Update is called once per frame
-        void Update()
+        private void Spawn()
         {
-
+            if (_enemiesPerSpawn > 0 && _enemiesOnScreen < _totalEnemies)
+            {
+                for (int i = 0; i< _enemiesPerSpawn; i++)
+                {
+                    if (_enemiesOnScreen < _maxEnemiesOnScreen)
+                    {
+                        GameObject _newEnemy = Instantiate(_enemies[0]) as GameObject;
+                        _newEnemy.transform.position = _spawnPoint.transform.position;
+                        _enemiesOnScreen += 1;
+                    }
+                }
+            }
         }
+
+        private void Start()
+        {
+            Spawn();
+        }
+
     }
 }
