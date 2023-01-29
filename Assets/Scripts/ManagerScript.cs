@@ -51,5 +51,13 @@ namespace TowerDefense
             Spawn();
         }
 
+        public void RemoveEnemyFromScreen()
+        {
+            if (_enemiesOnScreen > 0)
+            {
+                _enemiesOnScreen -= 1;
+            }
+        }
+
     }
 }
