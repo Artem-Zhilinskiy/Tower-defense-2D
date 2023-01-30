@@ -39,12 +39,14 @@ namespace TowerDefense
 
         private void OnTriggerEnter2D(Collider2D collision)
         {
+            Debug.Log(collision.tag);
             if (collision.tag == "MovingPoints")
             {
                 _target += 1;
             }
-            else if (collision.tag == "Finish")
+            else if (collision.tag == "Exit")
             {
+                Debug.Log("Destroyed");
                 ManagerScript._instance.RemoveEnemyFromScreen();
                 Destroy(gameObject);
             }
