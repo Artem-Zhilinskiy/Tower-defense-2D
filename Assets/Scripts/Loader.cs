@@ -1,20 +1,27 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace TowerDefense
 {
-    public class Loader : MonoBehaviour
+    public class Loader <T> : MonoBehaviour where T: MonoBehaviour
     {
-        public GameObject _manager;
+        private static T _instance;
 
-        private void Awake()
+        public static T Instance
         {
-            if (ManagerScript._instance == null)
+            get
             {
-                Instantiate(_manager);
+                if (_instance == null)
+                {
+                    _instance = FindObjectOfType<T>();
+                }
+                else if (_instance != FindObjectOfType<T>())
+                {
+                    Destroy(FindObjectOfType<T>());
+                }
+
+                DontDestroyOnLoad(FindObjectOfType<T>());
+                return _instance;
             }
         }
-
     }
 }

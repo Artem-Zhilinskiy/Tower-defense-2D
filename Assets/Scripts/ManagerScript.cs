@@ -4,10 +4,8 @@ using UnityEngine;
 
 namespace TowerDefense
 {
-    public class ManagerScript : MonoBehaviour
+    public class ManagerScript : Loader<ManagerScript>
     {
-        public static ManagerScript _instance = null;
-
         public GameObject _spawnPoint;
         public GameObject[] _enemies;
         public int _maxEnemiesOnScreen;
@@ -16,21 +14,9 @@ namespace TowerDefense
 
         private int _enemiesOnScreen = 0;
 
-        private void Awake()
-        {
-            if (_instance == null)
-            {
-                _instance = this;
-            }
-            else if (_instance != this)
-            {
-                Destroy(gameObject);
-            }
+        private const float _spawnDelay = 0.5f;
 
-            DontDestroyOnLoad(gameObject);
-        }
-
-        private void Spawn()
+        private IEnumerator Spawn()
         {
             if (_enemiesPerSpawn > 0 && _enemiesOnScreen < _totalEnemies)
             {
@@ -38,17 +24,20 @@ namespace TowerDefense
                 {
                     if (_enemiesOnScreen < _maxEnemiesOnScreen)
                     {
-                        GameObject _newEnemy = Instantiate(_enemies[0]) as GameObject;
+                        GameObject _newEnemy = Instantiate(_enemies[2]) as GameObject;
                         _newEnemy.transform.position = _spawnPoint.transform.position;
                         _enemiesOnScreen += 1;
                     }
                 }
+
+                yield return new WaitForSeconds(_spawnDelay);
+                StartCoroutine(Spawn());
             }
         }
 
         private void Start()
         {
-            Spawn();
+            StartCoroutine(Spawn());
         }
 
         public void RemoveEnemyFromScreen()
