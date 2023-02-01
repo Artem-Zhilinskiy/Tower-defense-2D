@@ -6,11 +6,17 @@ namespace TowerDefense
 {
     public class ManagerScript : Loader<ManagerScript>
     {
-        public GameObject _spawnPoint;
-        public GameObject[] _enemies;
-        public int _maxEnemiesOnScreen;
-        public int _totalEnemies;
-        public int _enemiesPerSpawn;
+        [SerializeField]
+        private GameObject _spawnPoint;
+        [SerializeField]
+        private GameObject[] _enemies;
+        [SerializeField]
+        private int _maxEnemiesOnScreen;
+        [SerializeField]
+        private int _totalEnemies;
+        [SerializeField]
+        private int _enemiesPerSpawn;
+
 
         private int _enemiesOnScreen = 0;
 

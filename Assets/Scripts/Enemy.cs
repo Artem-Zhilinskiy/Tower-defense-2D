@@ -4,13 +4,18 @@ namespace TowerDefense
 {
     public class Enemy : MonoBehaviour
     {
-        public int _target;
-        public Transform _exit;
-        public Transform[] _wayPoints;
-        public float _navigation;
+
+
+        [SerializeField]
+        private Transform _exit;
+        [SerializeField]
+        private Transform[] _wayPoints;
+        [SerializeField]
+        private float _navigation;
 
         private Transform _enemy;
-        float _navigationTime;
+        private float _navigationTime;
+        private int _target;
 
         private void Start()
         {
