@@ -7,6 +7,9 @@ TagManager:
   - Enemy
   - MovingPoints
   - Exit
+  - TowerSite
+  - Ground
+  - Tower
   layers:
   - Default
   - TransparentFX
