@@ -106,7 +106,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 423552749096716991}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -198,7 +198,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 423552749096716979}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: SelectedTower
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 423552749096716977}
+          m_ObjectArgumentAssemblyTypeName: TowerDefense.TowerButtonScript, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &423552749096716977
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -213,3 +224,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _towerObject: {fileID: 8811742002552645237, guid: 29e83756e8222844fbd2ddd091cbb0bb,
     type: 3}
+  _dragSprite: {fileID: 21300000, guid: 6bf5af37f3d35b64b81f9fd86a565275, type: 3}

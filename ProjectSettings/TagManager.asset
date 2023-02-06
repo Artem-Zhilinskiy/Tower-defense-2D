@@ -10,6 +10,7 @@ TagManager:
   - TowerSite
   - Ground
   - Tower
+  - TowerSiteFull
   layers:
   - Default
   - TransparentFX
