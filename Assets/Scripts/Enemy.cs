@@ -20,6 +20,7 @@ namespace TowerDefense
         private void Start()
         {
             _enemy = GetComponent<Transform>();
+            ManagerScript.Instance.RegisterEnemy(this);
         }
 
         private void Update()
@@ -50,8 +51,7 @@ namespace TowerDefense
             }
             else if (collision.tag == "Exit")
             {
-                ManagerScript.Instance.RemoveEnemyFromScreen();
-                Destroy(gameObject);
+                ManagerScript.Instance.UnregisterEnemy(this);
             }
         }
     }

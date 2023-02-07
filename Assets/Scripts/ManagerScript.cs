@@ -17,22 +17,20 @@ namespace TowerDefense
         [SerializeField]
         private int _enemiesPerSpawn;
 
-
-        private int _enemiesOnScreen = 0;
+        public List<Enemy> EnemyList = new List<Enemy>();
 
         private const float _spawnDelay = 0.5f;
 
         private IEnumerator Spawn()
         {
-            if (_enemiesPerSpawn > 0 && _enemiesOnScreen < _totalEnemies)
+            if (_enemiesPerSpawn > 0 && EnemyList.Count < _totalEnemies)
             {
                 for (int i = 0; i< _enemiesPerSpawn; i++)
                 {
-                    if (_enemiesOnScreen < _maxEnemiesOnScreen)
+                    if (EnemyList.Count < _maxEnemiesOnScreen)
                     {
                         GameObject _newEnemy = Instantiate(_enemies[2]) as GameObject;
                         _newEnemy.transform.position = _spawnPoint.transform.position;
-                        _enemiesOnScreen += 1;
                     }
                 }
 
@@ -41,18 +39,29 @@ namespace TowerDefense
             }
         }
 
+        public void RegisterEnemy(Enemy enemy)
+        {
+            EnemyList.Add(enemy);
+        }
+
+        public void UnregisterEnemy(Enemy enemy)
+        {
+            EnemyList.Remove(enemy);
+            Destroy(enemy.gameObject);
+        }
+
+        public void DestroyEnemies()
+        {
+            foreach (Enemy enemy in EnemyList)
+            {
+                Destroy(enemy.gameObject);
+            }
+            EnemyList.Clear();
+        }
+
         private void Start()
         {
             StartCoroutine(Spawn());
         }
-
-        public void RemoveEnemyFromScreen()
-        {
-            if (_enemiesOnScreen > 0)
-            {
-                _enemiesOnScreen -= 1;
-            }
-        }
-
     }
 }
