@@ -90,6 +90,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7853540222297638176}
+  - component: {fileID: 7675724630598114796}
   m_Layer: 8
   m_Name: Tower2
   m_TagString: Tower
@@ -112,3 +113,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7675724630598114796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4902130595733204103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6c95a19301ce4a4aaaa366f1e6ad20c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _timeBetweenAttack: 2
+  _attackRadius: 4
+  _projectile: {fileID: 2981950115697596070, guid: 93956d95e9288eb40a684b03eac2cbd5,
+    type: 3}
