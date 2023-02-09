@@ -20,7 +20,7 @@ namespace TowerDefense
         {
             _attackCounter -= Time.deltaTime;
 
-            if (_targetEnemy == null)
+            if (_targetEnemy == null || _targetEnemy.isDead)
             {
                 Enemy _nearestEnemy = GetNearestEnemy();
                 if (_nearestEnemy != null && Vector2.Distance(transform.localPosition, _nearestEnemy.transform.localPosition) <= _attackRadius)

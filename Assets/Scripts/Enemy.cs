@@ -12,20 +12,34 @@ namespace TowerDefense
         private Transform[] _wayPoints;
         [SerializeField]
         private float _navigation;
+        [SerializeField]
+        private int _health;
 
+        private int _target = 0;
         private Transform _enemy;
+        private Collider2D _enemyCollider;
         private float _navigationTime;
-        private int _target;
+        bool _isDead = false;
+
+        public bool isDead
+        {
+            get
+            {
+                return _isDead;
+            }
+        }
+
 
         private void Start()
         {
             _enemy = GetComponent<Transform>();
+            _enemyCollider = GetComponent<Collider2D>();
             ManagerScript.Instance.RegisterEnemy(this);
         }
 
         private void Update()
         {
-            if (_wayPoints != null)
+            if (_wayPoints != null && _isDead == false)
             {
                 _navigationTime += Time.deltaTime;
                 if (_navigationTime > _navigation)
@@ -53,6 +67,30 @@ namespace TowerDefense
             {
                 ManagerScript.Instance.UnregisterEnemy(this);
             }
+            else if (collision.tag == "Projectile")
+            {
+                ProjectileScript _newP = collision.gameObject.GetComponent<ProjectileScript>();
+                EnemyHit(_newP.AttackDamage);
+                Destroy(collision.gameObject);
+            }
+        }
+
+        public void EnemyHit(int _hitPoints)
+        {
+            if (_health - _hitPoints > 0)
+            {
+                _health -= _hitPoints;
+            }
+            else
+            {
+                Die();
+            }
+        }
+
+        public void Die()
+        {
+            _isDead = true;
+            _enemyCollider.enabled = false;
         }
     }
 }
