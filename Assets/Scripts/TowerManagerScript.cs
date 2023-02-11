@@ -7,14 +7,19 @@ namespace TowerDefense
 {
     public class TowerManagerScript : Loader<TowerManagerScript>
     {
-        private TowerButtonScript _towerButtonIsPressed;
+        public TowerButtonScript _towerButtonIsPressed { get; set; }
 
         SpriteRenderer _spriteRenderer;
+        private List<TowerControlScript> TowerList = new List<TowerControlScript>();
+        private List<Collider2D> BuildList = new List<Collider2D>();
+        private Collider2D _buildTile;
 
         // Start is called before the first frame update
         void Start()
         {
             _spriteRenderer = GetComponent<SpriteRenderer>();
+            _buildTile = GetComponent<Collider2D>();
+            _spriteRenderer.enabled = false;
         }
 
         // Update is called once per frame
@@ -27,7 +32,9 @@ namespace TowerDefense
 
                 if (_hit.collider != null && _hit.collider.tag  == "TowerSite")
                 {
-                    _hit.collider.tag = "TowerSiteFull";
+                    _buildTile = _hit.collider;
+                    _buildTile.tag = "TowerSiteFull";
+                    RegisterBuildSite(_buildTile);
                     PlaceTower(_hit);
                 }
             }
@@ -37,12 +44,43 @@ namespace TowerDefense
             }
         }
 
+        public void RegisterBuildSite(Collider2D buildTag)
+        {
+            BuildList.Add(buildTag);
+        }
+
+        public void RegisterTower (TowerControlScript tower)
+        {
+            TowerList.Add(tower);
+        }
+
+        public void RenameBuildTagSite()
+        {
+            foreach (Collider2D buildTag in BuildList)
+            {
+                buildTag.tag = "TowerSite";
+            }
+            BuildList.Clear();
+        }
+
+        public void DestroyAllTowers()
+        {
+            foreach (TowerControlScript tower in TowerList)
+            {
+                Destroy(tower.gameObject);
+            }
+            TowerList.Clear(); 
+        }
+
         public void PlaceTower(RaycastHit2D _hit)
         {
             if (!EventSystem.current.IsPointerOverGameObject() && _towerButtonIsPressed!= null)
             {
-                GameObject _newTower = Instantiate(_towerButtonIsPressed.TowerObject);
+                TowerControlScript _newTower = Instantiate(_towerButtonIsPressed.TowerObject);
                 _newTower.transform.position = _hit.transform.position;
+                BuyTower(_towerButtonIsPressed.TowerPrice);
+                ManagerScript.Instance.AudioSource.PlayOneShot(SoundManager.Instance.TowerBuilt);
+                RegisterTower(_newTower);
                 DisableDrag();
 
                 //disable tower placement if done once
@@ -50,11 +88,18 @@ namespace TowerDefense
             }
         }
 
+        public void BuyTower(int price)
+        {
+            ManagerScript.Instance.SubstractMoney(price);
+        }
+
         public void SelectedTower(TowerButtonScript _towerSelected)
         {
-            _towerButtonIsPressed = _towerSelected;
-            EnableDrag(_towerButtonIsPressed.DragSprite);
-            //Debug.Log("Pressed " + _towerButtonIsPressed.gameObject);
+            if (_towerSelected.TowerPrice <= ManagerScript.Instance.TotalMoney)
+            {
+                _towerButtonIsPressed = _towerSelected;
+                EnableDrag(_towerButtonIsPressed.DragSprite);
+            }
         }
 
         public void FollowMouse()

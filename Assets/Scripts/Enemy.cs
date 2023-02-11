@@ -14,6 +14,8 @@ namespace TowerDefense
         private float _navigation;
         [SerializeField]
         private int _health;
+        [SerializeField]
+        private int _rewardAmount;
 
         private int _target = 0;
         private Transform _enemy;
@@ -65,7 +67,10 @@ namespace TowerDefense
             }
             else if (collision.tag == "Exit")
             {
+                ManagerScript.Instance.RoundEscaped += 1;
+                ManagerScript.Instance.TotalEscaped += 1;
                 ManagerScript.Instance.UnregisterEnemy(this);
+                ManagerScript.Instance.IsWaveOver();
             }
             else if (collision.tag == "Projectile")
             {
@@ -80,6 +85,8 @@ namespace TowerDefense
             if (_health - _hitPoints > 0)
             {
                 _health -= _hitPoints;
+                ManagerScript.Instance.AudioSource.PlayOneShot(SoundManager.Instance.Hit);
+                //anim hurt
             }
             else
             {
@@ -91,6 +98,10 @@ namespace TowerDefense
         {
             _isDead = true;
             _enemyCollider.enabled = false;
+            ManagerScript.Instance.TotalKilled += 1;
+            ManagerScript.Instance.AudioSource.PlayOneShot(SoundManager.Instance.Death);
+            ManagerScript.Instance.AddMoney(_rewardAmount);
+            ManagerScript.Instance.IsWaveOver();
         }
     }
 }

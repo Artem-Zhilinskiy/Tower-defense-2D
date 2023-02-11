@@ -60,6 +60,18 @@ namespace TowerDefense
             _isAttacking = false;
             ProjectileScript _newProjectile = Instantiate(_projectile) as ProjectileScript;
             _newProjectile.transform.localPosition = transform.localPosition;
+            if (_newProjectile.PType == projectileType.projectile1)
+            {
+                ManagerScript.Instance.AudioSource.PlayOneShot(SoundManager.Instance.Arrow);
+            }
+            else if (_newProjectile.PType == projectileType.projectile2)
+            {
+                ManagerScript.Instance.AudioSource.PlayOneShot(SoundManager.Instance.Rock);
+            }
+            else if (_newProjectile.PType == projectileType.projectile3)
+            {
+                ManagerScript.Instance.AudioSource.PlayOneShot(SoundManager.Instance.FireBall);
+            }
 
             if (_targetEnemy == null)
             {

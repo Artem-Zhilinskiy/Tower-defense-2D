@@ -1,25 +1,121 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace TowerDefense
 {
+    public enum gameStatus
+    {
+        next, play, gameover, win
+    }
+
     public class ManagerScript : Loader<ManagerScript>
     {
         [SerializeField]
+        private int _totalWaves = 10;
+        [SerializeField]
+        private Text _totalMoneyLabel;
+        [SerializeField]
+        private Text _currentWave;
+        [SerializeField]
+        private Text _totalEscapedLabel;
+        [SerializeField]
+        private Text _playButtonLabel;
+        [SerializeField]
+        private Button _playButton;
+        [SerializeField]
         private GameObject _spawnPoint;
         [SerializeField]
-        private GameObject[] _enemies;
+        private Enemy[] _enemies;
         [SerializeField]
-        private int _maxEnemiesOnScreen;
-        [SerializeField]
-        private int _totalEnemies;
+        private int _totalEnemies = 3;
         [SerializeField]
         private int _enemiesPerSpawn;
+
+        private int _waveNumber = 0;
+        private int _totalMoney = 10;
+        private int _totalEscaped = 0;
+        private int _roundEscaped = 0;
+        private int _totalKilled = 0;
+        private int _whichEnemiesToSpawn = 0;
+        private int _enemiesToSpawn = 0;
+        private gameStatus _currentState = gameStatus.play;
+        private AudioSource _audioSource;
 
         public List<Enemy> EnemyList = new List<Enemy>();
 
         private const float _spawnDelay = 0.5f;
+
+        public int TotalEscaped
+        {
+            get
+            {
+                return _totalEscaped;
+            }
+            set
+            {
+                _totalEscaped = value;
+            }
+        }
+
+        public int RoundEscaped
+        {
+            get
+            {
+                return _roundEscaped;
+            }
+            set
+            {
+                _totalEscaped = value;
+            }
+        }
+
+        public int TotalKilled
+        {
+            get
+            {
+                return _totalKilled;
+            }
+            set
+            {
+                _totalKilled = value;
+            }
+
+        }
+
+        public int TotalMoney
+        {
+            get
+            {
+                return _totalMoney;
+            }
+            set
+            {
+                _totalMoney = value;
+                _totalMoneyLabel.text = TotalMoney.ToString();
+            }
+        }
+
+        public AudioSource AudioSource
+        {
+            get
+            {
+                return _audioSource;
+            }
+        }
+
+        private void Start()
+        {
+            _playButton.gameObject.SetActive(false);
+            _audioSource = GetComponent<AudioSource>();
+            ShowMenu();
+        }
+
+        private void Update()
+        {
+            HandleEscape();
+        }
 
         private IEnumerator Spawn()
         {
@@ -27,9 +123,9 @@ namespace TowerDefense
             {
                 for (int i = 0; i< _enemiesPerSpawn; i++)
                 {
-                    if (EnemyList.Count < _maxEnemiesOnScreen)
+                    if (EnemyList.Count < _totalEnemies)
                     {
-                        GameObject _newEnemy = Instantiate(_enemies[2]) as GameObject;
+                        Enemy _newEnemy = Instantiate(_enemies[Random.Range(0, _enemiesToSpawn)]) as Enemy;
                         _newEnemy.transform.position = _spawnPoint.transform.position;
                     }
                 }
@@ -59,9 +155,109 @@ namespace TowerDefense
             EnemyList.Clear();
         }
 
-        private void Start()
+        public void AddMoney(int amount)
         {
-            StartCoroutine(Spawn());
+            TotalMoney += amount;
         }
+
+        public void SubstractMoney(int amount)
+        {
+            TotalMoney -= amount;
+        } 
+
+        public void IsWaveOver()
+        {
+            _totalEscapedLabel.text = "Escaped " + TotalEscaped + " /10";
+
+            if ((RoundEscaped + TotalKilled) == _totalEnemies)
+            {
+                if (_waveNumber <= _enemies.Length)
+                {
+                    _enemiesToSpawn = _waveNumber;
+                }
+                SetCurrentGameState();
+                ShowMenu();
+            }
+        }
+
+        public void SetCurrentGameState()
+        {
+            if (_totalEscaped >= 10)
+            {
+                _currentState = gameStatus.gameover;
+            }
+            else if (_waveNumber == 0 && (RoundEscaped + TotalKilled) == 0)
+            {
+                _currentState = gameStatus.play;
+            }
+            else if (_waveNumber >= _totalWaves)
+            {
+                _currentState = gameStatus.win;
+            }
+            else
+            {
+                _currentState = gameStatus.next;
+            }
+        }
+
+        public void PlayButtonPressed()
+        {
+            switch(_currentState)
+            {
+                case gameStatus.next:
+                    _waveNumber += 1;
+                    _totalEnemies += _waveNumber;
+                    break;
+
+                default:
+                    _totalEnemies = 3;
+                    _totalEscaped = 0;
+                    _totalMoney = 10;
+                    _enemiesToSpawn = 0;
+                    TowerManagerScript.Instance.DestroyAllTowers();
+                    TowerManagerScript.Instance.RenameBuildTagSite();
+                    _totalMoneyLabel.text = TotalMoney.ToString();
+                    _totalEscapedLabel.text = "Escaped " + _totalEscaped + " /10";
+                    _audioSource.PlayOneShot(SoundManager.Instance.NewGame);
+                    break;
+            }
+            DestroyEnemies();
+            TotalKilled = 0;
+            RoundEscaped = 0;
+            _currentWave.text = "Wave " + (_waveNumber + 1);
+            StartCoroutine(Spawn());
+            _playButton.gameObject.SetActive(false);
+        }
+
+        public void ShowMenu()
+        {
+            switch (_currentState)
+            {
+                case gameStatus.gameover:
+                    _playButtonLabel.text = "Play again";
+                    AudioSource.PlayOneShot(SoundManager.Instance.GameOver);
+                    break;
+                case gameStatus.next:
+                    _playButtonLabel.text = "Next Wave";
+                    break;
+                case gameStatus.play:
+                    _playButtonLabel.text = "Play game";
+                    break;
+                case gameStatus.win:
+                    _playButtonLabel.text = "You win";
+                    break;
+            }
+            _playButton.gameObject.SetActive(true);
+        }
+
+        private void HandleEscape()
+        {
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                TowerManagerScript.Instance.DisableDrag();
+                TowerManagerScript.Instance._towerButtonIsPressed = null;
+            }
+        }
+
     }
 }

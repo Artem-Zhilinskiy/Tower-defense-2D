@@ -4,11 +4,13 @@ namespace TowerDefense
     public class TowerButtonScript : MonoBehaviour
     {
         [SerializeField]
-        GameObject _towerObject;
+        TowerControlScript _towerObject;
         [SerializeField]
         Sprite _dragSprite;
+        [SerializeField]
+        private int _towerPrice;
 
-        public GameObject TowerObject
+        public TowerControlScript TowerObject
         {
             get
             {
@@ -23,6 +25,14 @@ namespace TowerDefense
             {
 
                 return _dragSprite;
+            }
+        }
+
+        public int TowerPrice
+        {
+            get
+            {
+                return _towerPrice;
             }
         }
     }
