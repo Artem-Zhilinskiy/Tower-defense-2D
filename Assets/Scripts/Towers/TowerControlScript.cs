@@ -41,7 +41,7 @@ namespace TowerDefense
                 }
             }
             
-            if (Vector2.Distance(transform.localPosition, _targetEnemy.transform.localPosition) > _attackRadius)
+            if ((_targetEnemy != null) && (Vector2.Distance(transform.localPosition, _targetEnemy.transform.localPosition) > _attackRadius))
             {
                 _targetEnemy = null;
             }
