@@ -19,7 +19,7 @@ namespace TowerDefense
                     Destroy(FindObjectOfType<T>());
                 }
 
-                DontDestroyOnLoad(FindObjectOfType<T>());
+                //DontDestroyOnLoad(FindObjectOfType<T>());
                 return _instance;
             }
         }

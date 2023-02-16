@@ -81,6 +81,7 @@ namespace TowerDefense
             {
                 //move projectile to enemy
                 StartCoroutine(MoveProjectile(_newProjectile));
+                //Debug.Log("Move coroutine started");
             }
         }
 
@@ -95,9 +96,9 @@ namespace TowerDefense
                 yield return null;
             }
 
-            if (_projectile != null || _targetEnemy == null)
+            if (_projectile != null || _targetEnemy == null || _targetEnemy.isDead)
             {
-                Destroy(_projectile);
+                Destroy(_projectile.gameObject);
             }
         }
 
@@ -106,7 +107,7 @@ namespace TowerDefense
             if (_thisEnemy == null)
             {
                 _thisEnemy = GetNearestEnemy();
-                if (_thisEnemy = null)
+                if (_thisEnemy == null)
                 {
                     return 0f;
                 }

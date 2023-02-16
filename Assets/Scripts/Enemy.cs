@@ -76,7 +76,7 @@ namespace TowerDefense
             {
                 ProjectileScript _newP = collision.gameObject.GetComponent<ProjectileScript>();
                 EnemyHit(_newP.AttackDamage);
-                Destroy(collision.gameObject);
+                //Destroy(collision.gameObject);
             }
         }
 
