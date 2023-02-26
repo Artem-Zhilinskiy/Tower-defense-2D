@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
 
 namespace TowerDefense
 {
@@ -256,6 +257,17 @@ namespace TowerDefense
             {
                 TowerManagerScript.Instance.DisableDrag();
                 TowerManagerScript.Instance._towerButtonIsPressed = null;
+            }
+        }
+
+        private void PauseMenu()
+        {
+            if (Keyboard.current[Key.Escape].wasPressedThisFrame)
+            {
+                if (_pauseMenuUI.activeSelf == false)
+                {
+                    Pause();
+                }
             }
         }
 
