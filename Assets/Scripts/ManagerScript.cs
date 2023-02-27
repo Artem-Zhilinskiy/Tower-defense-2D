@@ -115,7 +115,8 @@ namespace TowerDefense
 
         private void Update()
         {
-            HandleEscape();
+            HandleMouseRightClick();
+            PauseMenu();
         }
 
         private IEnumerator Spawn()
@@ -251,9 +252,9 @@ namespace TowerDefense
             _playButton.gameObject.SetActive(true);
         }
 
-        private void HandleEscape()
+        private void HandleMouseRightClick()
         {
-            if (Input.GetKeyDown(KeyCode.Escape))
+            if (Input.GetKeyDown(KeyCode.Mouse1))
             {
                 TowerManagerScript.Instance.DisableDrag();
                 TowerManagerScript.Instance._towerButtonIsPressed = null;
@@ -264,10 +265,13 @@ namespace TowerDefense
         {
             if (Keyboard.current[Key.Escape].wasPressedThisFrame)
             {
+                Debug.Log("Включение меню-паузы");
+                /*
                 if (_pauseMenuUI.activeSelf == false)
                 {
-                    Pause();
+                    Debug.Log("Включение меню-паузы");
                 }
+                */
             }
         }
 
