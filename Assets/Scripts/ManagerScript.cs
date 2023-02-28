@@ -34,6 +34,10 @@ namespace TowerDefense
         [SerializeField]
         private int _enemiesPerSpawn;
 
+        [SerializeField]
+        private GameObject _pauseMenuUI;
+        private static bool _gameIsPaused = false;
+
         private int _waveNumber = 0;
         private int _totalMoney = 10;
         private int _totalEscaped = 0;
@@ -265,14 +269,22 @@ namespace TowerDefense
         {
             if (Keyboard.current[Key.Escape].wasPressedThisFrame)
             {
-                Debug.Log("Включение меню-паузы");
-                /*
-                if (_pauseMenuUI.activeSelf == false)
-                {
-                    Debug.Log("Включение меню-паузы");
-                }
-                */
+                Pause();
             }
+        }
+        //Открытие меню-паузы на кнопку Escape
+        private void Pause()
+        {
+            _gameIsPaused = true;
+            _pauseMenuUI.SetActive(true);
+            Time.timeScale = 0f;
+        }
+
+        public void Continue()
+        {
+            _gameIsPaused = false;
+            _pauseMenuUI.SetActive(false);
+            Time.timeScale = 1f;
         }
 
     }
