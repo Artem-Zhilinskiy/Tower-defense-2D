@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 namespace TowerDefense
 {
@@ -37,6 +38,9 @@ namespace TowerDefense
         [SerializeField]
         private GameObject _pauseMenuUI;
         private static bool _gameIsPaused = false;
+
+        [SerializeField]
+        private Button _nextLevelButton;
 
         private int _waveNumber = 0;
         private int _totalMoney = 10;
@@ -285,6 +289,33 @@ namespace TowerDefense
             _gameIsPaused = false;
             _pauseMenuUI.SetActive(false);
             Time.timeScale = 1f;
+        }
+
+        public void NextLevel()
+        {
+            string _currentScene = SceneManager.GetActiveScene().name;
+            switch (_currentScene)
+            {
+                case "Level1Scene":
+                    SceneManager.LoadScene("Level2Scene");
+                    break;
+                case "Level2Scene":
+                    SceneManager.LoadScene("Level3Scene");
+                    break;
+                case "Level3Scene":
+                    SceneManager.LoadScene("Level4Scene");
+                    break;
+            }
+        }
+
+        public void SaveGame()
+        {
+            Debug.Log("Save game button is triggered");
+        }
+
+        public void ExitButton()
+        {
+            Debug.Log("Exit button is triggered");
         }
 
     }

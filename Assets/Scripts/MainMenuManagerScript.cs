@@ -16,7 +16,7 @@ namespace TowerDefense
 
         public void NewGame()
         {
-            SceneManager.LoadScene("MainScene");
+            SceneManager.LoadScene("Level1Scene");
         }
 
         public void QuitGame()
