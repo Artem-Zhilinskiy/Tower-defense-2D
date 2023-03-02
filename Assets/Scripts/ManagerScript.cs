@@ -298,12 +298,15 @@ namespace TowerDefense
             {
                 case "Level1Scene":
                     SceneManager.LoadScene("Level2Scene");
+                    PlayerPrefs.SetInt("Level", 2);
                     break;
                 case "Level2Scene":
                     SceneManager.LoadScene("Level3Scene");
+                    PlayerPrefs.SetInt("Level", 3);
                     break;
                 case "Level3Scene":
                     SceneManager.LoadScene("Level4Scene");
+                    PlayerPrefs.SetInt("Level", 4);
                     break;
             }
         }

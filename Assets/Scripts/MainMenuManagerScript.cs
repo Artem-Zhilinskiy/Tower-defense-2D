@@ -12,11 +12,33 @@ namespace TowerDefense
         [SerializeField]
         private Button _newGameButtonMain;
         [SerializeField]
+        private Button _continueGameButtonMain;
+        [SerializeField]
         private Button _exitButtonMain;
 
         public void NewGame()
         {
             SceneManager.LoadScene("Level1Scene");
+            PlayerPrefs.SetInt("Level", 1);
+        }
+
+        public void ContinueGame()
+        {
+            switch (PlayerPrefs.GetInt("Level"))
+            {
+                case 2:
+                    SceneManager.LoadScene("Level2Scene");
+                    break;
+                case 3:
+                    SceneManager.LoadScene("Level3Scene");
+                    break;
+                case 4:
+                    SceneManager.LoadScene("Level4Scene");
+                    break;
+                default:
+                    Debug.Log("Сохранений нет. Начните новую игру");
+                    break;
+            }
         }
 
         public void QuitGame()
