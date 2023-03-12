@@ -49,12 +49,15 @@ TagManager:
   - name: Map
     uniqueID: 4182854301
     locked: 0
+  - name: Enemies
+    uniqueID: 1752945369
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
   - name: MovingPoints
     uniqueID: 425328075
     locked: 0
-  - name: Enemies
-    uniqueID: 1752945369
+  - name: MenuPauseSprite
+    uniqueID: 2578925531
     locked: 0

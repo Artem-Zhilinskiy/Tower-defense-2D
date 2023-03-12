@@ -222,7 +222,7 @@ namespace TowerDefense
                 default:
                     _totalEnemies = 3;
                     _totalEscaped = 0;
-                    _totalMoney = 10;
+                    _totalMoney = 50;
                     _enemiesToSpawn = 0;
                     TowerManagerScript.Instance.DestroyAllTowers();
                     TowerManagerScript.Instance.RenameBuildTagSite();
@@ -290,7 +290,7 @@ namespace TowerDefense
             _pauseMenuUI.SetActive(false);
             Time.timeScale = 1f;
         }
-
+        /*
         public void NextLevel()
         {
             string _currentScene = SceneManager.GetActiveScene().name;
@@ -310,6 +310,7 @@ namespace TowerDefense
                     break;
             }
         }
+        */
 
         public void SaveGame()
         {
@@ -318,6 +319,7 @@ namespace TowerDefense
 
         public void ExitButton()
         {
+            Application.Quit();
             Debug.Log("Exit button is triggered");
         }
 
