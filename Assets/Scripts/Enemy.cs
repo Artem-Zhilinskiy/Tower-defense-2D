@@ -4,8 +4,6 @@ namespace TowerDefense
 {
     public class Enemy : MonoBehaviour
     {
-
-
         [SerializeField]
         private Transform _exit;
         [SerializeField]

@@ -54,7 +54,7 @@ namespace TowerDefense
 
         public List<Enemy> EnemyList = new List<Enemy>();
 
-        private const float _spawnDelay = 0.5f;
+        private const float _spawnDelay = 1f;
 
         public int TotalEscaped
         {
@@ -76,7 +76,7 @@ namespace TowerDefense
             }
             set
             {
-                _totalEscaped = value;
+                _roundEscaped = value;
             }
         }
 
@@ -224,6 +224,7 @@ namespace TowerDefense
                     _totalEscaped = 0;
                     _totalMoney = 50;
                     _enemiesToSpawn = 0;
+                    _waveNumber = 0;
                     TowerManagerScript.Instance.DestroyAllTowers();
                     TowerManagerScript.Instance.RenameBuildTagSite();
                     _totalMoneyLabel.text = TotalMoney.ToString();
