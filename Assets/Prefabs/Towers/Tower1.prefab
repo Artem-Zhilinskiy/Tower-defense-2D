@@ -130,8 +130,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6c95a19301ce4a4aaaa366f1e6ad20c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timeBetweenAttack: 0.5
-  _attackRadius: 5
+  _timeBetweenAttack: 5
+  _attackRadius: 3
   _projectile: {fileID: 4999388387640127591, guid: 4b635bb53fd0a824fb69421b5cea5dc0,
     type: 3}
 --- !u!1 &7451353438949105364
@@ -144,9 +144,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7373162494074965927}
   - component: {fileID: 7055542762555581653}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SlingerSprite
-  m_TagString: Untagged
+  m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -204,9 +204,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 1220529693
+  m_SortingLayer: -1
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: cb5008e6d448031489ae7f729a6cae9e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

@@ -94,9 +94,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2516000888870802038}
   - component: {fileID: 5206675112768361023}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ArcherSprite
-  m_TagString: Untagged
+  m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -154,8 +154,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1220529693
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 283c4709fbd537d4bbe53a4479cdd778, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -214,7 +214,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6c95a19301ce4a4aaaa366f1e6ad20c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timeBetweenAttack: 2
-  _attackRadius: 4
+  _timeBetweenAttack: 3
+  _attackRadius: 6
   _projectile: {fileID: 2981950115697596070, guid: 93956d95e9288eb40a684b03eac2cbd5,
     type: 3}
