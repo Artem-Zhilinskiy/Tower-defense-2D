@@ -18,12 +18,13 @@ namespace TowerDefense
 
         public void NewGame()
         {
-            SceneManager.LoadScene("Level1Scene");
+            SceneManager.LoadScene(1);
             PlayerPrefs.SetInt("Level", 1);
         }
 
         public void ContinueGame()
         {
+            /*
             switch (PlayerPrefs.GetInt("Level"))
             {
                 case 2:
@@ -39,6 +40,7 @@ namespace TowerDefense
                     Debug.Log("Сохранений нет. Начните новую игру");
                     break;
             }
+            */
         }
 
         public void QuitGame()
