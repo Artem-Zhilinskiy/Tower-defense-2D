@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System.IO;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -15,7 +16,7 @@ namespace TowerDefense
     public class ManagerScript : Loader<ManagerScript>
     {
         [SerializeField]
-        private int _totalWaves = 10;
+        private byte _totalWaves = 10;
         [SerializeField]
         private Text _totalMoneyLabel;
         [SerializeField]
@@ -31,9 +32,9 @@ namespace TowerDefense
         [SerializeField]
         private Enemy[] _enemies;
         [SerializeField]
-        private int _totalEnemies = 3;
+        private byte _totalEnemies = 3;
         [SerializeField]
-        private int _enemiesPerSpawn;
+        private byte _enemiesPerSpawn;
 
         [SerializeField]
         private GameObject _pauseMenuUI;
@@ -42,13 +43,13 @@ namespace TowerDefense
         [SerializeField]
         private Button _nextLevelButton;
 
-        private int _waveNumber = 0;
-        private int _totalMoney = 10;
-        private int _totalEscaped = 0;
-        private int _roundEscaped = 0;
-        private int _totalKilled = 0;
-        private int _whichEnemiesToSpawn = 0;
-        private int _enemiesToSpawn = 0;
+        private byte _waveNumber = 0;
+        private byte _totalMoney = 10;
+        private byte _totalEscaped = 0;
+        private byte _roundEscaped = 0;
+        private byte _totalKilled = 0;
+        private byte _whichEnemiesToSpawn = 0;
+        private byte _enemiesToSpawn = 0;
         private gameStatus _currentState = gameStatus.play;
         private AudioSource _audioSource;
 
@@ -56,7 +57,7 @@ namespace TowerDefense
 
         private const float _spawnDelay = 1f;
 
-        public int TotalEscaped
+        public byte TotalEscaped
         {
             get
             {
@@ -68,7 +69,7 @@ namespace TowerDefense
             }
         }
 
-        public int RoundEscaped
+        public byte RoundEscaped
         {
             get
             {
@@ -80,7 +81,7 @@ namespace TowerDefense
             }
         }
 
-        public int TotalKilled
+        public byte TotalKilled
         {
             get
             {
@@ -93,7 +94,7 @@ namespace TowerDefense
 
         }
 
-        public int TotalMoney
+        public byte TotalMoney
         {
             get
             {
@@ -165,12 +166,12 @@ namespace TowerDefense
             EnemyList.Clear();
         }
 
-        public void AddMoney(int amount)
+        public void AddMoney(byte amount)
         {
             TotalMoney += amount;
         }
 
-        public void SubstractMoney(int amount)
+        public void SubstractMoney(byte amount)
         {
             TotalMoney -= amount;
         } 
@@ -316,6 +317,9 @@ namespace TowerDefense
         public void SaveGame()
         {
             Debug.Log("Save game button is triggered");
+            //Save two byte variables: _totalEscaped and _waveNumber
+            byte[] _saveArray = new byte[] { _totalEscaped, _waveNumber };
+            File.WriteAllBytes(_path, _saveArray); //how to save to path where exe file is located
         }
 
         public void ExitButton()
@@ -323,6 +327,5 @@ namespace TowerDefense
             Application.Quit();
             Debug.Log("Exit button is triggered");
         }
-
     }
 }
