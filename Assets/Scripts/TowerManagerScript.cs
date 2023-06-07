@@ -88,7 +88,7 @@ namespace TowerDefense
             }
         }
 
-        public void BuyTower(int price)
+        public void BuyTower(byte price)
         {
             ManagerScript.Instance.SubstractMoney(price);
         }

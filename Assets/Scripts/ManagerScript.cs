@@ -319,7 +319,8 @@ namespace TowerDefense
             Debug.Log("Save game button is triggered");
             //Save two byte variables: _totalEscaped and _waveNumber
             byte[] _saveArray = new byte[] { _totalEscaped, _waveNumber };
-            File.WriteAllBytes(_path, _saveArray); //how to save to path where exe file is located
+            //File.WriteAllBytes(Application.persistentDataPath, _saveArray); //how to save to path where exe file is located
+            File.WriteAllBytes(Path.Combine(Application.persistentDataPath,"Tower defense 2D"), _saveArray); //how to save to path where exe file is located
         }
 
         public void ExitButton()

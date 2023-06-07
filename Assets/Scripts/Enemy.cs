@@ -13,7 +13,7 @@ namespace TowerDefense
         [SerializeField]
         private int _health;
         [SerializeField]
-        private int _rewardAmount;
+        private byte _rewardAmount;
 
         private int _target = 0;
         private Transform _enemy;

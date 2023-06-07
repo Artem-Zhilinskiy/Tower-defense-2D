@@ -8,7 +8,7 @@ namespace TowerDefense
         [SerializeField]
         Sprite _dragSprite;
         [SerializeField]
-        private int _towerPrice;
+        private byte _towerPrice;
 
         public TowerControlScript TowerObject
         {
@@ -28,7 +28,7 @@ namespace TowerDefense
             }
         }
 
-        public int TowerPrice
+        public byte TowerPrice
         {
             get
             {
