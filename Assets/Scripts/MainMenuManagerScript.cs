@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.IO;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -16,31 +17,19 @@ namespace TowerDefense
         [SerializeField]
         private Button _exitButtonMain;
 
+        public static bool _loading = false; //static variable defines if player chose to load game
+
         public void NewGame()
         {
             SceneManager.LoadScene(1);
-            PlayerPrefs.SetInt("Level", 1);
+            //PlayerPrefs.SetInt("Level", 1);
         }
 
         public void ContinueGame()
         {
-            /*
-            switch (PlayerPrefs.GetInt("Level"))
-            {
-                case 2:
-                    SceneManager.LoadScene("Level2Scene");
-                    break;
-                case 3:
-                    SceneManager.LoadScene("Level3Scene");
-                    break;
-                case 4:
-                    SceneManager.LoadScene("Level4Scene");
-                    break;
-                default:
-                    Debug.Log("Сохранений нет. Начните новую игру");
-                    break;
-            }
-            */
+            Debug.Log("Continue game button is triggered");
+            _loading = true;
+            SceneManager.LoadScene(1);
         }
 
         public void QuitGame()

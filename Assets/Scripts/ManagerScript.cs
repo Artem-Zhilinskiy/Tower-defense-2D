@@ -69,6 +69,18 @@ namespace TowerDefense
             }
         }
 
+        public byte WaveNumber
+        {
+            get
+            {
+                return _waveNumber;
+            }
+            set
+            {
+                _waveNumber = value;
+            }
+        }
+
         public byte RoundEscaped
         {
             get
@@ -117,9 +129,24 @@ namespace TowerDefense
 
         private void Start()
         {
+            Load();
             _playButton.gameObject.SetActive(false);
             _audioSource = GetComponent<AudioSource>();
             ShowMenu();
+        }
+
+        private void Load()
+        {
+            if (MainMenuManagerScript._loading == true)
+            {
+                byte[] _saveArray = File.ReadAllBytes(Path.Combine(Application.persistentDataPath, "Tower defense 2D"));
+                _totalEscaped = _saveArray[0];
+                _waveNumber = _saveArray[1];
+                //Debug.Log(_totalEscaped);
+                //Debug.Log(_waveNumber);
+                _totalEscapedLabel.text = "Escaped " + TotalEscaped + " /10";
+                _currentWave.text = "Wave " + _waveNumber;
+            }
         }
 
         private void Update()
@@ -319,8 +346,7 @@ namespace TowerDefense
             Debug.Log("Save game button is triggered");
             //Save two byte variables: _totalEscaped and _waveNumber
             byte[] _saveArray = new byte[] { _totalEscaped, _waveNumber };
-            //File.WriteAllBytes(Application.persistentDataPath, _saveArray); //how to save to path where exe file is located
-            File.WriteAllBytes(Path.Combine(Application.persistentDataPath,"Tower defense 2D"), _saveArray); //how to save to path where exe file is located
+            File.WriteAllBytes(Path.Combine(Application.persistentDataPath,"Tower defense 2D"), _saveArray);
         }
 
         public void ExitButton()
