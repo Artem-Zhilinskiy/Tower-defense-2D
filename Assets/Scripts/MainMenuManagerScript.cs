@@ -9,13 +9,27 @@ namespace TowerDefense
 {
     public class MainMenuManagerScript : MonoBehaviour
     {
-        [Header("Кнопки главного меню")]
+        [Header("Панель главного меню")]
+        [SerializeField]
+        private GameObject _mainMenuPanel;
         [SerializeField]
         private Button _newGameButtonMain;
         [SerializeField]
         private Button _continueGameButtonMain;
         [SerializeField]
         private Button _exitButtonMain;
+
+        [Header("Панель настроек разрешения")]
+        [SerializeField]
+        private GameObject _preferencesPanel;
+        [SerializeField]
+        private Button _leftResButton;
+        [SerializeField]
+        private Button _rightResButton;
+        [SerializeField]
+        private Button _applyResButton;
+        [SerializeField]
+        private Button _closeResButton;
 
         public static bool _loading = false; //static variable defines if player chose to load game
 
@@ -36,6 +50,18 @@ namespace TowerDefense
         {
             Debug.Log("Выход из игры");
             Application.Quit();
+        }
+
+        public void OpenPreferencesMenu()
+        {
+            _mainMenuPanel.SetActive(false);
+            _preferencesPanel.SetActive(true);
+        }
+
+        public void ClosePreferenceMenu()
+        {
+            _preferencesPanel.SetActive(false);
+            _mainMenuPanel.SetActive(true);
         }
     }
 }
