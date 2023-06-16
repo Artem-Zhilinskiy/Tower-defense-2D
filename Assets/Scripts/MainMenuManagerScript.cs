@@ -30,8 +30,26 @@ namespace TowerDefense
         private Button _applyResButton;
         [SerializeField]
         private Button _closeResButton;
+        [SerializeField]
+        private Toggle _fullScreenToggle;
+        [SerializeField]
+        private Toggle _vsyncToggle;
 
         public static bool _loading = false; //static variable defines if player chose to load game
+
+        private void Start()
+        {
+            _fullScreenToggle.isOn = Screen.fullScreen;
+
+            if (QualitySettings.vSyncCount == 0)
+            {
+                _vsyncToggle.isOn = false;
+            }
+            else
+            {
+                _vsyncToggle.isOn = true;
+            }
+        }
 
         public void NewGame()
         {
@@ -62,6 +80,20 @@ namespace TowerDefense
         {
             _preferencesPanel.SetActive(false);
             _mainMenuPanel.SetActive(true);
+        }
+
+        public void ApplyGraphics()
+        {
+            Screen.fullScreen = _fullScreenToggle.isOn;
+
+            if (_vsyncToggle.isOn)
+            {
+                QualitySettings.vSyncCount = 1;
+            }
+            else
+            {
+                QualitySettings.vSyncCount = 0;
+            }
         }
     }
 }
