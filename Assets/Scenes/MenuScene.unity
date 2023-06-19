@@ -1079,6 +1079,14 @@ MonoBehaviour:
   _closeResButton: {fileID: 906933324}
   _fullScreenToggle: {fileID: 1691700673}
   _vsyncToggle: {fileID: 260024895}
+  _resolutionLabel: {fileID: 1877091512}
+  _resolutions:
+  - _horizontal: 1920
+    _vertical: 1080
+  - _horizontal: 1280
+    _vertical: 720
+  - _horizontal: 860
+    _vertical: 480
 --- !u!114 &526704949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2216,8 +2224,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 526704948}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: QuitGame
+        m_TargetAssemblyTypeName: TowerDefense.MainMenuManagerScript, Assembly-CSharp
+        m_MethodName: ResRight
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2896,8 +2904,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 526704948}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: QuitGame
+        m_TargetAssemblyTypeName: TowerDefense.MainMenuManagerScript, Assembly-CSharp
+        m_MethodName: ResLeft
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

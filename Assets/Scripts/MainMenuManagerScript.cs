@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using TMPro;
 
 namespace TowerDefense
 {
@@ -34,8 +35,13 @@ namespace TowerDefense
         private Toggle _fullScreenToggle;
         [SerializeField]
         private Toggle _vsyncToggle;
+        [SerializeField]
+        private TMP_Text _resolutionLabel;
 
         public static bool _loading = false; //static variable defines if player chose to load game
+
+        public List<ResItem> _resolutions = new List<ResItem>();
+        private int _selectedResolution;
 
         private void Start()
         {
@@ -48,6 +54,27 @@ namespace TowerDefense
             else
             {
                 _vsyncToggle.isOn = true;
+            }
+
+            bool _foundRes = false;
+            for (int i = 0; i < _resolutions.Count; i++)
+            {
+                if (Screen.width == _resolutions[i]._horizontal && Screen.height == _resolutions[i]._vertical)
+                {
+                    _foundRes = true;
+                    _selectedResolution = i;
+                    UpdateResLabel();
+                }
+            }
+
+            if (!_foundRes)
+            {
+                ResItem _newRes = new ResItem();
+                _newRes._horizontal = Screen.width;
+                _newRes._vertical = Screen.height;
+                _resolutions.Add(_newRes);
+                _selectedResolution = _resolutions.Count - 1;
+                UpdateResLabel();
             }
         }
 
@@ -82,9 +109,34 @@ namespace TowerDefense
             _mainMenuPanel.SetActive(true);
         }
 
+        public void ResLeft()
+        {
+            _selectedResolution--;
+            if (_selectedResolution < 0)
+            {
+                _selectedResolution = 0;
+            }
+            UpdateResLabel();
+        }
+
+        public void ResRight()
+        {
+            _selectedResolution++;
+            if (_selectedResolution > _resolutions.Count - 1)
+            {
+                _selectedResolution = _resolutions.Count - 1;
+            }
+            UpdateResLabel();
+        }
+
+        public void UpdateResLabel()
+        {
+            _resolutionLabel.text = _resolutions[_selectedResolution]._horizontal.ToString() + "X" + _resolutions[_selectedResolution]._vertical.ToString();
+        }
+
         public void ApplyGraphics()
         {
-            Screen.fullScreen = _fullScreenToggle.isOn;
+            //Screen.fullScreen = _fullScreenToggle.isOn;
 
             if (_vsyncToggle.isOn)
             {
@@ -94,6 +146,14 @@ namespace TowerDefense
             {
                 QualitySettings.vSyncCount = 0;
             }
+
+            Screen.SetResolution(_resolutions[_selectedResolution]._horizontal, _resolutions[_selectedResolution]._vertical, _fullScreenToggle.isOn);
         }
+    }
+
+    [System.Serializable]
+    public class ResItem
+    {
+        public int _horizontal, _vertical;
     }
 }
