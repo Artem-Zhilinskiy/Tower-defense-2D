@@ -24,6 +24,7 @@ namespace TowerDefense
 
         // Update is called once per frame
         void Update()
+            //Переделать на события
         {
             if (Input.GetMouseButton(0))
             {
