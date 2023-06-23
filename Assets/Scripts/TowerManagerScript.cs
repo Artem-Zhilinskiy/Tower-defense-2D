@@ -20,11 +20,12 @@ namespace TowerDefense
             _spriteRenderer = GetComponent<SpriteRenderer>();
             _buildTile = GetComponent<Collider2D>();
             _spriteRenderer.enabled = false;
+
+            //Модуль событий
         }
 
         // Update is called once per frame
         void Update()
-            //Переделать на события
         {
             if (Input.GetMouseButton(0))
             {
