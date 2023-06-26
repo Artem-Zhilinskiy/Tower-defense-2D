@@ -29,16 +29,63 @@ namespace TowerDefense
             }
         }
 
+        #region "Логика прохождения контрольной точки ботом"
+
+        public delegate void CrossPointDelegate();
+
+        public static event CrossPointDelegate CrossPointEvent;
+
+        public void CrossPointEventMethod()
+        {
+            if (CrossPointEvent != null)
+            {
+                CrossPointEvent();
+            }
+        }
+
+        private void CrossPointEventHandler()
+        {
+            CrossPointEvent += CrossPointMethod;
+        }
+
+        private void CrossPointMethod()
+        {
+
+            //Переписать в корутину
+            if (_wayPoints != null && _isDead == false)
+            {
+                _navigationTime += Time.deltaTime;
+                if (_navigationTime > _navigation)
+                {
+                    if (_target < _wayPoints.Length)
+                    {
+                        _enemy.position = Vector2.MoveTowards(_enemy.position, _wayPoints[_target].position, _navigationTime);
+                    }
+                    else
+                    {
+                        _enemy.position = Vector2.MoveTowards(_enemy.position, _exit.position, _navigationTime);
+                    }
+                    _navigationTime = 0;
+                }
+            }
+        }
+
+        #endregion
+
 
         private void Start()
         {
             _enemy = GetComponent<Transform>();
             _enemyCollider = GetComponent<Collider2D>();
             ManagerScript.Instance.RegisterEnemy(this);
+
+            //Включение события прохождения контрольной точки
+            CrossPointEventHandler();
         }
 
         private void Update()
         {
+            /*
             if (_wayPoints != null && _isDead == false)
             {
                 _navigationTime += Time.deltaTime;
@@ -55,6 +102,7 @@ namespace TowerDefense
                     _navigationTime = 0;
                 }
             }
+            */
         }
 
         private void OnTriggerEnter2D(Collider2D collision)
