@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System.Collections;
 
 namespace TowerDefense
 {
@@ -20,6 +21,8 @@ namespace TowerDefense
         private Collider2D _enemyCollider;
         private float _navigationTime;
         bool _isDead = false;
+        [SerializeField]
+        private float _timeBetweenSteps = 0.02f;
 
         public bool isDead
         {
@@ -31,6 +34,7 @@ namespace TowerDefense
 
         #region "Логика прохождения контрольной точки ботом"
 
+        /*
         public delegate void CrossPointDelegate();
 
         public static event CrossPointDelegate CrossPointEvent;
@@ -42,16 +46,18 @@ namespace TowerDefense
                 CrossPointEvent();
             }
         }
-
         private void CrossPointEventHandler()
         {
             CrossPointEvent += CrossPointMethod;
         }
+        */
 
+        Coroutine _enemyMovementCoroutine = null;
+
+        /*
         private void CrossPointMethod()
         {
 
-            //Переписать в корутину
             if (_wayPoints != null && _isDead == false)
             {
                 _navigationTime += Time.deltaTime;
@@ -69,6 +75,33 @@ namespace TowerDefense
                 }
             }
         }
+        */
+
+        private IEnumerator EnemyMovementCoroutine()
+        {
+            while (_isDead == false)
+            {
+                if (_wayPoints != null && _isDead == false)
+                {
+                    _navigationTime += Time.deltaTime;
+                    if (_navigationTime > _navigation)
+                    {
+                        if (_target < _wayPoints.Length)
+                        {
+                            _enemy.position = Vector2.MoveTowards(_enemy.position, _wayPoints[_target].position, _navigationTime);
+                            yield return new WaitForSecondsRealtime(_timeBetweenSteps);
+                        }
+                        else
+                        {
+                            _enemy.position = Vector2.MoveTowards(_enemy.position, _exit.position, _navigationTime);
+                            yield return new WaitForSecondsRealtime(_timeBetweenSteps);
+                        }
+                        _navigationTime = 0;
+                    }
+                }
+            }
+            yield return new WaitForSecondsRealtime(Time.deltaTime);
+        }
 
         #endregion
 
@@ -79,8 +112,11 @@ namespace TowerDefense
             _enemyCollider = GetComponent<Collider2D>();
             ManagerScript.Instance.RegisterEnemy(this);
 
+            //Включение корутины движения
+            _enemyMovementCoroutine = StartCoroutine(EnemyMovementCoroutine());
+
             //Включение события прохождения контрольной точки
-            CrossPointEventHandler();
+            //CrossPointEventHandler();
         }
 
         private void Update()
@@ -143,6 +179,7 @@ namespace TowerDefense
         public void Die()
         {
             _isDead = true;
+            StopCoroutine(EnemyMovementCoroutine());
             _enemyCollider.enabled = false;
             ManagerScript.Instance.TotalKilled += 1;
             ManagerScript.Instance.AudioSource.PlayOneShot(SoundManager.Instance.Death);
