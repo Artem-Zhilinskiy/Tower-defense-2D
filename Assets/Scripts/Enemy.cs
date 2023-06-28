@@ -32,7 +32,6 @@ namespace TowerDefense
             }
         }
 
-        #region "Логика прохождения контрольной точки ботом"
 
         /*
         public delegate void CrossPointDelegate();
@@ -102,8 +101,6 @@ namespace TowerDefense
             }
             yield return new WaitForSecondsRealtime(Time.deltaTime);
         }
-
-        #endregion
 
 
         private void Start()
